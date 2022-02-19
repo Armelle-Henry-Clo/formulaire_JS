@@ -34,7 +34,7 @@ h2{
 img{
     margin-top: 1vh;
     border-radius: 50%;
-    border:solid rgba(0, 0, 255, 0.747) 1px;
+    border:solid rgba(0, 0, 255, 0.747) 2px;
 }
 div{
     padding: 1vh 1vw 1vh 1vw;

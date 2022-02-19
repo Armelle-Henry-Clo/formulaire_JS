@@ -6,11 +6,11 @@ let nom = document.getElementById('name');
     
 function monNom(){
 
-    if(nom !== null){
-        nom.style.borderColor = "green";
+    if(nom.value == true){
+        nom.style.border = "thick solid green";
         
     }else{
-        nom.style.borderColor = "red";
+        nom.style.borderColor = "thick solid red";
         alert("Vous devez mettre votre nom!")
     };
 };
@@ -25,10 +25,10 @@ function monMail(){
 
     if (mail.value.match(/[a-z0-9_\-\.]+@[a-z0-9_\-\.]+\.[a-z]+/i))
     {
-        mail.style.borderColor = "green";
+        mail.style.border = "thick solid green";
 
     }else{
-        mail.style.borderColor = "red";
+        mail.style.border = "thick solid red";
         alert("votre mail n'est pas valide!");
     };  
 };
@@ -48,12 +48,12 @@ let mdp2 = document.getElementById('mdp2');
         a = mdp2.value; 
 
     if(z === a ){
-        mdp1.style.borderColor = "green";
-        mdp2.style.borderColor = "green";
+        mdp1.style.border = "thick solid green";
+        mdp2.style.border = "thick solid green";
 
     }else{
-        mdp1.style.borderColor = "red";
-        mdp2.style.borderColor = "red";
+        mdp1.style.border = "thick solid red";
+        mdp2.style.border = "thick solid red";
         alert("Veuillez taper le même mot de passe");
     };
 
@@ -63,8 +63,7 @@ let mdp2 = document.getElementById('mdp2');
 //-----------evenement----
 
 let btnValid = document.getElementById('btn');     
-    // btnValid.addEventListener('click',inscription());
-
+   
 function inscription(){
 
     if(mail.style.borderColor == 'green'&& nom.style.borderColor == 'green' && mdp2.style.borderColor == 'green'){
