@@ -15,7 +15,6 @@ function monNom(){
     };
 };
 
-
 ///------------input Email
 
 let mail = document.getElementById('email');
