@@ -13,26 +13,27 @@
                     <div class="photo">
                         <img src="img/happy-successful-manager-holding-glasses.jpg" width="150px" height="150px" alt=""><br>
                     </div>
+                    <div id="titre"></div>
                     <div>
                         <label for="name">Nom</label> <br>
-                        <input type="text" name="name" value="" id="name">
+                        <input type="text" name="name" onchange="monNom()" value="" id="name">
                     </div>
                     <div>
                         <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" value=""  required >
+                        <input type="email" name="email" id="email" value="" onchange="monMail()">
                     </div>
                     <div>
                         <label for="mdp">Mot de Passe</label><br>
-                        <input type="password" name="mdp" id="mdp" value=""  required><br>
+                        <input type="password" name="mdp" id="mdp1" value=""><br>
                         <p></p> 
                     </div>
                     <div>
                         <label for="mdp">Verification Mot de Passe</label> <br>
-                        <input type="password" name="mdp" id="mdp" value=""  required><br> 
+                        <input type="password" name="mdp" id="mdp2" onchange="monMdp()" value="" ><br> 
                         <p></p> 
                     </div> 
                     <div class="valider">          
-                        <input type="button" value="s'inscrire" id="btn"><br> 
+                        <input type="button" onclick="inscription()" value="s'inscrire" id="btn"><br> 
                     </div>
             </form>
     <script src="Js/app.js"></script>
